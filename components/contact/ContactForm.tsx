@@ -48,6 +48,14 @@ export function ContactForm() {
       className="rounded-[2rem] border border-border bg-white p-6 shadow-2xl shadow-primary/10 sm:p-8"
       noValidate
     >
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        className="hidden"
+        aria-hidden="true"
+        {...register("website")}
+      />
       <div className="grid gap-5 sm:grid-cols-2">
         {fields.map((field) => (
           <label

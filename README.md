@@ -30,6 +30,19 @@ npm run lint
 npm run format:check
 ```
 
+## Security & Permissions
+
+The app includes security headers, strict contact form validation, a honeypot field, body size limits, and basic contact API rate limiting.
+
+To prevent people from editing the project without permission, enable these controls in GitHub or your Git provider:
+
+- Keep the repository private.
+- Protect the `main` branch.
+- Require pull requests before merging.
+- Require review approval before merging.
+- Require `npm run lint` and `npm run build` checks before merging.
+- Disable force pushes and branch deletion on protected branches.
+
 ## Pages
 
 - `/` - Home
