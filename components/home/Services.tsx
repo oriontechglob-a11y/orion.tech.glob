@@ -57,7 +57,7 @@ export function Services() {
           delivery path.
         </p>
         <motion.div
-          className="mx-auto mt-7 h-1 w-24 origin-left rounded-full bg-accent"
+          className="mx-auto mt-7 h-1 w-24 origin-left rounded-md bg-accent"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
@@ -76,10 +76,10 @@ export function Services() {
             }}
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 280, damping: 22 }}
-            className="group relative overflow-hidden rounded-3xl border border-border bg-white p-5 shadow-sm transition-shadow sm:p-7"
+            className="group depth-card relative overflow-hidden rounded-md border border-border bg-white p-5 shadow-sm transition-shadow sm:p-7"
           >
             <motion.span
-              className="absolute right-5 top-5 h-3 w-3 rounded-full bg-accent-secondary opacity-70"
+              className="absolute right-5 top-5 h-3 w-3 rounded-md bg-accent-secondary opacity-70"
               animate={reduceMotion ? undefined : { scale: [1, 1.8, 1], opacity: [0.4, 0.9, 0.4] }}
               transition={{
                 duration: 2.4,
@@ -91,14 +91,14 @@ export function Services() {
             <motion.div
               whileHover={{ rotate: -8, scale: 1.12 }}
               transition={{ type: "spring", stiffness: 360, damping: 18 }}
-              className="mb-6 grid h-14 w-14 place-items-center rounded-2xl bg-surface text-accent"
+              className="mb-6 grid h-14 w-14 place-items-center rounded-md bg-surface text-accent"
             >
               <service.icon className="h-6 w-6" />
             </motion.div>
             <h3 className="text-xl font-bold text-primary">{service.title}</h3>
             <p className="mt-3 leading-7 text-muted">{service.description}</p>
             <motion.div
-              className="mt-6 h-1 w-12 rounded-full bg-accent"
+              className="mt-6 h-1 w-12 rounded-md bg-accent"
               initial={{ width: 48 }}
               whileHover={{ width: 96 }}
               transition={{ duration: 0.25 }}

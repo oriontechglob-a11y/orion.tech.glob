@@ -46,7 +46,7 @@ export function Navbar() {
           className="group flex items-center gap-3 font-semibold text-primary"
           onClick={() => setOpen(false)}
         >
-          <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-xl bg-primary shadow-sm transition-transform duration-300 ease-out group-hover:-rotate-3 group-hover:scale-105">
+          <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-md bg-primary shadow-sm transition-transform duration-300 ease-out group-hover:-rotate-3 group-hover:scale-105">
             <Image
               src="/images/orion-mark.png"
               alt="Orion Tech logo"
@@ -79,7 +79,7 @@ export function Navbar() {
         </div>
         <motion.button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-full border border-border bg-white text-primary lg:hidden"
+          className="relative z-[70] grid h-12 w-12 shrink-0 place-items-center rounded-md border border-primary bg-primary text-white shadow-xl shadow-primary/20 lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
@@ -129,7 +129,7 @@ export function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="flex min-h-12 items-center rounded-xl px-3 text-base font-semibold text-primary hover:bg-surface"
+                    className="flex min-h-12 items-center rounded-md px-3 text-base font-semibold text-primary hover:bg-surface"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}

@@ -67,7 +67,7 @@ export default function ContactPage() {
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">FAQ</p>
             <h2 className="mt-3 text-3xl font-black text-primary">Common questions</h2>
           </div>
-          <div className="rounded-[2rem] border border-border bg-white px-6 shadow-sm">
+          <div className="depth-card rounded-md border border-border bg-white px-6 shadow-sm">
             <Accordion type="single" collapsible>
               {faqs.map((faq, index) => (
                 <AccordionItem key={faq.q} value={`item-${index}`}>

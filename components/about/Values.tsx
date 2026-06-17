@@ -32,13 +32,13 @@ export function Values() {
   return (
     <AnimatedSection className="py-20 sm:py-24">
       <motion.div variants={childReveal} className="grid gap-5 md:grid-cols-2">
-        <div className="rounded-[2rem] bg-primary p-8 text-white shadow-2xl shadow-primary/15">
+        <div className="depth-card-dark rounded-md bg-primary p-8 text-white shadow-2xl shadow-primary/15">
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-white/60">Mission</p>
           <h2 className="mt-4 text-3xl font-black">
             Make premium software delivery accessible to ambitious teams.
           </h2>
         </div>
-        <div className="rounded-[2rem] border border-border bg-surface p-8 shadow-sm">
+        <div className="rounded-md border border-border bg-surface p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">Vision</p>
           <h2 className="mt-4 text-3xl font-black text-primary">
             Become the trusted technology partner behind products people love using.
@@ -52,9 +52,9 @@ export function Values() {
             key={value.title}
             variants={childReveal}
             whileHover={{ y: -6 }}
-            className="rounded-3xl border border-border bg-white p-6 shadow-sm"
+            className="depth-card rounded-md border border-border bg-white p-6 shadow-sm"
           >
-            <div className="mb-5 grid h-12 w-12 place-items-center rounded-2xl bg-surface text-accent">
+            <div className="mb-5 grid h-12 w-12 place-items-center rounded-md bg-surface text-accent">
               <value.icon className="h-6 w-6" />
             </div>
             <h3 className="text-xl font-bold text-primary">{value.title}</h3>

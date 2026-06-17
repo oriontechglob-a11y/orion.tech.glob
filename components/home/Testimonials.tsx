@@ -56,7 +56,7 @@ export default function Testimonials() {
       </motion.div>
       <motion.div
         variants={childReveal}
-        className="mx-auto mt-12 max-w-4xl rounded-[2rem] border border-border bg-white p-8 shadow-2xl shadow-primary/10 sm:p-12"
+        className="mx-auto mt-12 max-w-4xl rounded-md border border-border bg-white p-8 shadow-2xl shadow-primary/10 sm:p-12"
       >
         <Quote className="h-10 w-10 text-accent" />
         <AnimatePresence mode="wait">
@@ -81,7 +81,7 @@ export default function Testimonials() {
             <button
               key={item.name}
               aria-label={`Show testimonial from ${item.name}`}
-              className={`h-2.5 rounded-full transition-all ${index === active ? "w-9 bg-accent" : "w-2.5 bg-border"}`}
+              className={`h-2.5 rounded-md transition-all ${index === active ? "w-9 bg-accent" : "w-2.5 bg-border"}`}
               onClick={() => setActive(index)}
             />
           ))}

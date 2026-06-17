@@ -13,15 +13,15 @@ export function CTABanner() {
     <AnimatedSection className="py-20">
       <motion.div
         variants={childReveal}
-        className="relative overflow-hidden rounded-[2rem] bg-accent px-6 py-14 text-center text-white shadow-2xl shadow-accent/20 sm:px-10"
+        className="relative overflow-hidden rounded-md bg-accent px-6 py-14 text-center text-white shadow-2xl shadow-accent/20 sm:px-10"
       >
         <motion.span
-          className="absolute left-8 top-8 h-6 w-6 rounded-full bg-white/25"
+          className="absolute left-8 top-8 h-6 w-6 rounded-md bg-white/25"
           animate={reduceMotion ? undefined : { y: [0, 14, 0], scale: [1, 1.2, 1] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.span
-          className="absolute bottom-8 right-10 h-10 w-10 rounded-2xl bg-white/20"
+          className="absolute bottom-8 right-10 h-10 w-10 rounded-md bg-white/20"
           animate={reduceMotion ? undefined : { y: [0, -12, 0], rotate: [0, 8, 0] }}
           transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
         />

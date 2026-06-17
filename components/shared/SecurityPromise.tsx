@@ -35,9 +35,9 @@ export function SecurityPromise({ compact = false }: SecurityPromiseProps) {
 
   return (
     <AnimatedSection className={compact ? "py-14 sm:py-16" : "py-20 sm:py-24"}>
-      <div className="relative overflow-hidden rounded-[2rem] bg-primary p-6 text-white shadow-2xl shadow-primary/15 sm:p-8 lg:p-10">
+      <div className="depth-card-dark relative overflow-hidden rounded-md bg-primary p-6 text-white shadow-2xl shadow-primary/15 sm:p-8 lg:p-10">
         <motion.span
-          className="absolute right-6 top-6 h-20 w-20 rounded-full border border-white/15"
+          className="absolute right-6 top-6 h-20 w-20 rounded-md border border-white/15"
           animate={reduceMotion ? undefined : { rotate: 360 }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         />
@@ -62,10 +62,10 @@ export function SecurityPromise({ compact = false }: SecurityPromiseProps) {
               variants={childReveal}
               whileHover={{ y: -6, scale: 1.015 }}
               transition={{ type: "spring", stiffness: 260, damping: 22 }}
-              className="rounded-3xl border border-white/10 bg-white p-5 text-primary shadow-xl shadow-primary/10"
+              className="rounded-md border border-white/10 bg-white p-5 text-primary shadow-xl shadow-primary/10"
             >
               <motion.div
-                className="mb-5 grid h-12 w-12 place-items-center rounded-2xl bg-surface text-accent"
+                className="mb-5 grid h-12 w-12 place-items-center rounded-md bg-surface text-accent"
                 animate={reduceMotion ? undefined : { y: [0, index % 2 === 0 ? -4 : 4, 0] }}
                 transition={{ duration: 3.2 + index, repeat: Infinity, ease: "easeInOut" }}
               >

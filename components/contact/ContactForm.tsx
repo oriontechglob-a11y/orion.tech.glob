@@ -45,7 +45,7 @@ export function ContactForm() {
     <motion.form
       variants={childReveal}
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-[2rem] border border-border bg-white p-6 shadow-2xl shadow-primary/10 sm:p-8"
+      className="depth-card rounded-md border border-border bg-white p-6 shadow-2xl shadow-primary/10 sm:p-8"
       noValidate
     >
       <input
@@ -66,7 +66,7 @@ export function ContactForm() {
             <input
               type={field.type}
               placeholder={field.placeholder}
-              className="min-h-12 w-full rounded-2xl border border-border bg-surface px-4 text-primary outline-none transition-colors focus:border-accent focus:bg-white"
+              className="min-h-12 w-full rounded-md border border-border bg-surface px-4 text-primary outline-none transition-colors focus:border-accent focus:bg-white"
               aria-invalid={Boolean(errors[field.name])}
               {...register(field.name)}
             />
@@ -86,7 +86,7 @@ export function ContactForm() {
           <textarea
             placeholder="Tell us what you want to build, what stage you are in, and any timeline you have in mind."
             rows={6}
-            className="w-full rounded-2xl border border-border bg-surface px-4 py-3 text-primary outline-none transition-colors focus:border-accent focus:bg-white"
+            className="w-full rounded-md border border-border bg-surface px-4 py-3 text-primary outline-none transition-colors focus:border-accent focus:bg-white"
             aria-invalid={Boolean(errors.message)}
             {...register("message")}
           />

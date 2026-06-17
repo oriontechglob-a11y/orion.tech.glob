@@ -24,7 +24,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
         <div>
           <div className="mb-4 flex items-center gap-3 text-lg font-semibold">
-            <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-xl bg-white transition-transform duration-300 ease-out hover:scale-105">
+            <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-md bg-white transition-transform duration-300 ease-out hover:scale-105">
               <Image
                 src="/images/orion-mark.png"
                 alt="Orion Tech logo"
@@ -72,7 +72,7 @@ export function Footer() {
                 key={index}
                 href="#"
                 aria-label="Social profile placeholder"
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/75 transition-colors hover:bg-white hover:text-primary"
+                className="grid h-10 w-10 place-items-center rounded-md border border-white/20 text-white/75 transition-colors hover:bg-white hover:text-primary"
               >
                 <Icon className="h-4 w-4" />
               </a>

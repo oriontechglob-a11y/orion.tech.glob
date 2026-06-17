@@ -16,9 +16,9 @@ export function Process() {
         </h2>
       </motion.div>
       <div className="relative mt-16 grid gap-6 lg:grid-cols-5">
-        <motion.div className="absolute left-8 top-8 hidden h-1 rounded-full bg-border lg:left-0 lg:right-0 lg:top-9 lg:block" />
+        <motion.div className="absolute left-8 top-8 hidden h-1 rounded-md bg-border lg:left-0 lg:right-0 lg:top-9 lg:block" />
         <motion.div
-          className="absolute left-8 top-8 hidden h-1 origin-left rounded-full bg-accent lg:block"
+          className="absolute left-8 top-8 hidden h-1 origin-left rounded-md bg-accent lg:block"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -31,17 +31,17 @@ export function Process() {
             variants={childReveal}
             whileHover={{ y: -8, scale: 1.02, boxShadow: "0 20px 50px rgba(11,31,58,0.1)" }}
             transition={{ type: "spring", stiffness: 260, damping: 22 }}
-            className="relative overflow-hidden rounded-3xl border border-border bg-white p-6 shadow-sm"
+            className="depth-card relative overflow-hidden rounded-md border border-border bg-white p-6 shadow-sm"
           >
             <motion.span
-              className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-surface"
+              className="absolute -right-6 -top-6 h-20 w-20 rounded-md bg-surface"
               initial={{ scale: 0.7, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08, duration: 0.45 }}
             />
             <motion.div
-              className="mb-5 grid h-16 w-16 place-items-center rounded-2xl bg-primary text-xl font-black text-white"
+              className="mb-5 grid h-16 w-16 place-items-center rounded-md bg-primary text-xl font-black text-white"
               whileHover={{ rotate: -6, scale: 1.08 }}
               transition={{ type: "spring", stiffness: 340, damping: 18 }}
             >

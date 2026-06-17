@@ -30,9 +30,9 @@ export function Team() {
             key={member.role}
             variants={childReveal}
             whileHover={{ y: -8, rotateX: 2 }}
-            className="rounded-[2rem] border border-border bg-white p-5 text-center shadow-sm"
+            className="depth-card rounded-md border border-border bg-white p-5 text-center shadow-sm"
           >
-            <div className="relative mx-auto h-56 overflow-hidden rounded-3xl bg-surface">
+            <div className="relative mx-auto h-56 overflow-hidden rounded-md bg-surface">
               <Image
                 src={member.image}
                 alt={`${member.role} placeholder portrait`}
@@ -49,7 +49,7 @@ export function Team() {
                   key={index}
                   href="#"
                   aria-label={`${member.role} social profile placeholder`}
-                  className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted transition-colors hover:bg-primary hover:text-white"
+                  className="grid h-10 w-10 place-items-center rounded-md border border-border text-muted transition-colors hover:bg-primary hover:text-white"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
