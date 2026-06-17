@@ -47,7 +47,7 @@ export default function Testimonials() {
   }, [reduceMotion]);
 
   return (
-    <AnimatedSection className="py-20 sm:py-24">
+    <AnimatedSection id="reviews" className="py-20 sm:py-24">
       <motion.div variants={childReveal} className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">Testimonials</p>
         <h2 className="mt-3 text-3xl font-black tracking-tight text-primary sm:text-5xl">
@@ -56,7 +56,7 @@ export default function Testimonials() {
       </motion.div>
       <motion.div
         variants={childReveal}
-        className="mx-auto mt-12 max-w-4xl rounded-md border border-border bg-white p-8 shadow-2xl shadow-primary/10 sm:p-12"
+        className="depth-card mx-auto mt-12 max-w-4xl rounded-md border border-border bg-white p-8 shadow-2xl shadow-primary/10 sm:p-12"
       >
         <Quote className="h-10 w-10 text-accent" />
         <AnimatePresence mode="wait">

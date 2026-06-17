@@ -8,7 +8,7 @@ const steps = ["Discover", "Design", "Develop", "Deploy", "Support"];
 
 export function Process() {
   return (
-    <AnimatedSection className="py-20 sm:py-24">
+    <AnimatedSection id="workflow" className="py-20 sm:py-24">
       <motion.div variants={childReveal} className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">Workflow</p>
         <h2 className="mt-3 text-3xl font-black tracking-tight text-primary sm:text-5xl">

@@ -28,13 +28,14 @@ const promises = [
 
 type SecurityPromiseProps = {
   compact?: boolean;
+  id?: string;
 };
 
-export function SecurityPromise({ compact = false }: SecurityPromiseProps) {
+export function SecurityPromise({ compact = false, id }: SecurityPromiseProps) {
   const reduceMotion = useReducedMotion();
 
   return (
-    <AnimatedSection className={compact ? "py-14 sm:py-16" : "py-20 sm:py-24"}>
+    <AnimatedSection id={id} className={compact ? "py-14 sm:py-16" : "py-20 sm:py-24"}>
       <div className="depth-card-dark relative overflow-hidden rounded-md bg-primary p-6 text-white shadow-2xl shadow-primary/15 sm:p-8 lg:p-10">
         <motion.span
           className="absolute right-6 top-6 h-20 w-20 rounded-md border border-white/15"

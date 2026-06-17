@@ -10,10 +10,10 @@ export function CTABanner() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <AnimatedSection className="py-20">
+    <AnimatedSection id="start" className="py-20">
       <motion.div
         variants={childReveal}
-        className="relative overflow-hidden rounded-md bg-accent px-6 py-14 text-center text-white shadow-2xl shadow-accent/20 sm:px-10"
+        className="depth-card relative overflow-hidden rounded-md bg-accent px-6 py-14 text-center text-white shadow-2xl shadow-accent/20 sm:px-10"
       >
         <motion.span
           className="absolute left-8 top-8 h-6 w-6 rounded-md bg-white/25"

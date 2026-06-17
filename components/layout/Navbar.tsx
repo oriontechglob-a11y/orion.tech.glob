@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { LockKeyhole, Menu, X } from "lucide-react";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -20,7 +20,7 @@ const links = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  const { scrollY } = useScroll();
+  const { scrollY, scrollYProgress } = useScroll();
   const backgroundColor = useTransform(
     scrollY,
     [0, 80],
@@ -37,8 +37,9 @@ export function Navbar() {
       style={{ backgroundColor, boxShadow }}
       className="fixed inset-x-0 top-0 z-50 border-b border-transparent backdrop-blur-md"
     >
+      <motion.div className="h-1 origin-left bg-accent" style={{ scaleX: scrollYProgress }} />
       <nav
-        className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+        className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
         <Link
@@ -58,21 +59,27 @@ export function Navbar() {
           </span>
           <span className="text-lg tracking-tight">Orion Tech</span>
         </Link>
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="depth-card hidden items-center gap-1 rounded-md border border-border bg-white p-1 lg:flex">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-semibold text-muted transition-colors hover:text-accent",
-                pathname === link.href && "text-primary",
+                "relative rounded-md px-4 py-2 text-sm font-black text-muted transition-colors hover:text-primary",
+                pathname === link.href && "bg-primary text-white hover:text-white",
               )}
             >
               {link.label}
             </Link>
           ))}
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
+          <div className="depth-card flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-xs font-black uppercase tracking-[0.18em] text-primary">
+            <span className="grid h-6 w-6 place-items-center rounded-md bg-surface text-accent">
+              <LockKeyhole className="h-3.5 w-3.5" />
+            </span>
+            Secure Live
+          </div>
           <Button href="/contact" size="sm">
             Get a Quote
           </Button>
@@ -111,7 +118,7 @@ export function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="border-t border-border bg-white px-4 py-6 shadow-2xl lg:hidden"
+            className="depth-card border-t border-border bg-white px-4 py-6 shadow-2xl lg:hidden"
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
@@ -129,7 +136,10 @@ export function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="flex min-h-12 items-center rounded-md px-3 text-base font-semibold text-primary hover:bg-surface"
+                    className={cn(
+                      "flex min-h-12 items-center rounded-md border border-border px-3 text-base font-black text-primary hover:bg-surface",
+                      pathname === link.href && "bg-primary text-white hover:bg-primary",
+                    )}
                     onClick={() => setOpen(false)}
                   >
                     {link.label}
