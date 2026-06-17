@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-surface: #f4f6f9;
+  --color-foreground: #0b1220;
+  --color-primary: #0b1f3a;
+  --color-accent: #2f6fed;
+  --color-accent-secondary: #00b894;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-card: #ffffff;
+  --color-card-foreground: #0b1220;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0b1220;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f4f6f9;
+  --color-secondary-foreground: #0b1220;
+  --color-muted-foreground: #6b7280;
+  --color-destructive: #dc2626;
+  --color-input: #e5e7eb;
+  --color-ring: #2f6fed;
+  --radius: 1rem;
+  --radius-sm: 0.625rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #0b1220;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #2f6fed;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 3px solid #2f6fed;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
