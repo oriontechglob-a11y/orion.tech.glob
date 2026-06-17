@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 
+import { AgencyShowcase } from "@/components/home/AgencyShowcase";
 import { CTABanner } from "@/components/home/CTABanner";
 import { Hero } from "@/components/home/Hero";
 import { HomeSectionNav } from "@/components/home/HomeSectionNav";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Hero />
       <HomeSectionNav />
+      <AgencyShowcase />
       <Services />
       <SecurityPromise id="security" />
       <Process />

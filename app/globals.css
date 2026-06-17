@@ -34,13 +34,15 @@
 }
 
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
   background: #ffffff;
 }
 
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   background: #ffffff;
   color: #0b1220;
   font-family: var(--font-sans);

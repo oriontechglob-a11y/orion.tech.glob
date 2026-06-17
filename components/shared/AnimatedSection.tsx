@@ -19,6 +19,16 @@ export const childReveal: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
 };
 
+export const childRevealLeft: Variants = {
+  hidden: { opacity: 0, x: -48 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.55, ease: "easeOut" } },
+};
+
+export const childRevealRight: Variants = {
+  hidden: { opacity: 0, x: 48 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.55, ease: "easeOut" } },
+};
+
 type AnimatedSectionProps = {
   children: ReactNode;
   className?: string;

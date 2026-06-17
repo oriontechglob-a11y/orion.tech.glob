@@ -7,6 +7,7 @@ import { LockKeyhole, MessageSquare, ShieldCheck, Sparkles, Workflow } from "luc
 import { AnimatedSection, childReveal } from "@/components/shared/AnimatedSection";
 
 const sections = [
+  { href: "#showcase", label: "Showcase", icon: Sparkles },
   { href: "#services", label: "Services", icon: Sparkles },
   { href: "#security", label: "Security", icon: ShieldCheck },
   { href: "#workflow", label: "Workflow", icon: Workflow },
