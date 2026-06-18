@@ -14,23 +14,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://oriontech.glob"),
+  metadataBase: new URL("https://shreeharihardwaremart.com"),
   title: {
-    default: "Orion Tech | Secure Web and App Development",
-    template: "%s | Orion Tech",
+    default: "Shree Hari Hardware Mart | Secure Web and App Development",
+    template: "%s | Shree Hari Hardware Mart",
   },
   description:
-    "Orion Tech builds privacy-first websites, applications, fintech interfaces, and custom software for growing businesses.",
+    "Shree Hari Hardware Mart builds privacy-first websites, applications, fintech interfaces, and custom software for growing businesses.",
   openGraph: {
-    title: "Orion Tech",
+    title: "Shree Hari Hardware Mart",
     description: "Privacy-first web and app development services for ambitious teams.",
-    url: "https://oriontech.glob",
-    siteName: "Orion Tech",
+    url: "https://shreeharihardwaremart.com",
+    siteName: "Shree Hari Hardware Mart",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Orion Tech",
+    title: "Shree Hari Hardware Mart",
     description: "Privacy-first web and app development services for ambitious teams.",
   },
 };

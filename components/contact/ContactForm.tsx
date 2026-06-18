@@ -37,7 +37,7 @@ export function ContactForm() {
       return;
     }
 
-    toast.success("Thanks. Your message has been sent to Orion Tech.");
+    toast.success("Thanks. Your message has been sent to Shree Hari Hardware Mart.");
     reset();
   };
 

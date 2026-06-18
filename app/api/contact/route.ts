@@ -66,10 +66,10 @@ export async function POST(request: Request) {
 
   try {
     await resend.emails.send({
-      from: "Orion Tech Website <onboarding@resend.dev>",
-      to: "oriontech.glob@gmail.com",
+      from: "Shree Hari Hardware Mart Website <onboarding@resend.dev>",
+      to: "shreeharihardwaremart@gmail.com",
       replyTo: email,
-      subject: `New Orion Tech inquiry: ${safeSubject}`,
+      subject: `New Shree Hari Hardware Mart inquiry: ${safeSubject}`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${safeSubject}\n\n${message}`,
     });
 

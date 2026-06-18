@@ -53,8 +53,8 @@ export function Services() {
           End-to-end product engineering
         </h2>
         <p className="mt-5 text-lg leading-8 text-muted">
-          From the first product conversation to launch and support, Orion Tech covers the full
-          delivery path.
+          From the first product conversation to launch and support, Shree Hari Hardware Mart covers
+          the full delivery path.
         </p>
         <motion.div
           className="mx-auto mt-7 h-1 w-24 origin-left rounded-md bg-accent"

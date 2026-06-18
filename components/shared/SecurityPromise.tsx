@@ -50,9 +50,9 @@ export function SecurityPromise({ compact = false, id }: SecurityPromiseProps) {
             Human software should protect people first.
           </h2>
           <p className="mt-5 text-base leading-8 text-white/75 sm:text-lg">
-            Orion Tech builds websites and applications with a simple motto: earn trust before
-            scale. Every project is shaped around privacy, secure data flow, and a calm user
-            experience.
+            Shree Hari Hardware Mart builds websites and applications with a simple motto: earn
+            trust before scale. Every project is shaped around privacy, secure data flow, and a calm
+            user experience.
           </p>
         </motion.div>
 

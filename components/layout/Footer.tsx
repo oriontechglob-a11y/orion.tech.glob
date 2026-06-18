@@ -49,13 +49,13 @@ export function Footer() {
               <span className="relative grid h-12 w-12 place-items-center overflow-hidden rounded-md bg-primary transition-transform duration-300 ease-out hover:scale-105">
                 <Image
                   src="/images/orion-mark.png"
-                  alt="Orion Tech logo"
+                  alt="Shree Hari Hardware Mart logo"
                   width={48}
                   height={48}
                   className="h-full w-full object-cover"
                 />
               </span>
-              Orion Tech
+              Shree Hari Hardware Mart
             </div>
             <p className="max-w-md text-sm leading-7 text-muted">
               Security-minded websites, applications, fintech interfaces, and dashboards designed
@@ -112,10 +112,10 @@ export function Footer() {
               Connect
             </h2>
             <a
-              href="mailto:oriontech.glob@gmail.com"
+              href="mailto:shreeharihardwaremart@gmail.com"
               className="depth-card mb-5 flex items-center gap-3 rounded-md border border-border bg-surface p-4 text-sm font-black text-primary transition-colors hover:bg-white"
             >
-              <Mail className="h-4 w-4 text-accent" /> oriontech.glob@gmail.com
+              <Mail className="h-4 w-4 text-accent" /> shreeharihardwaremart@gmail.com
             </a>
             <div className="flex gap-3" aria-label="Social links">
               {[GitBranch, BriefcaseBusiness, MessageCircle].map((Icon, index) => (
@@ -137,7 +137,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col justify-between gap-4 border-t border-border pt-6 text-xs text-muted md:flex-row md:items-center">
-          <p>Copyright {new Date().getFullYear()} Orion Tech. All rights reserved.</p>
+          <p>Copyright {new Date().getFullYear()} Shree Hari Hardware Mart. All rights reserved.</p>
           <div className="flex flex-wrap gap-4">
             {companyLinks.slice(1).map((link) => (
               <Link

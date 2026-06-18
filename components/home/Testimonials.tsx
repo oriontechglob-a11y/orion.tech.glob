@@ -9,13 +9,13 @@ import { AnimatedSection, childReveal } from "@/components/shared/AnimatedSectio
 const testimonials = [
   {
     quote:
-      "Orion Tech delivered a clean, professional fintech experience with strong attention to UI quality, performance, and practical product flow.",
+      "Shree Hari Hardware Mart delivered a clean, professional fintech experience with strong attention to UI quality, performance, and practical product flow.",
     name: "BSJ Infotech",
     role: "Fintech Project Review",
   },
   {
     quote:
-      "Orion Tech translated our rough product idea into a clean, reliable platform faster than we expected.",
+      "Shree Hari Hardware Mart translated our rough product idea into a clean, reliable platform faster than we expected.",
     name: "FinOps Studio",
     role: "Product Platform Review",
   },

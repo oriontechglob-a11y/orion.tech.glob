@@ -147,8 +147,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.5 }}
           >
-            Orion Tech designs and ships human-friendly websites, applications, and fintech
-            interfaces where privacy, security, and user trust come first.
+            Shree Hari Hardware Mart designs and ships human-friendly websites, applications, and
+            fintech interfaces where privacy, security, and user trust come first.
           </motion.p>
           <motion.div
             className="mt-9 flex flex-col gap-4 sm:flex-row"
@@ -197,7 +197,7 @@ export function Hero() {
                 </div>
                 <Image
                   src="/images/orion-mark.png"
-                  alt="Orion constellation mark"
+                  alt="Shree Hari Hardware Mart brand mark"
                   width={56}
                   height={56}
                   className="h-14 w-14 rounded-md object-cover"
@@ -211,7 +211,7 @@ export function Hero() {
               >
                 <Image
                   src="/images/orion-mark.png"
-                  alt="Animated Orion brand mark"
+                  alt="Animated Shree Hari Hardware Mart brand mark"
                   width={220}
                   height={220}
                   className="mx-auto h-32 w-32 object-contain sm:h-48 sm:w-48"
@@ -219,7 +219,7 @@ export function Hero() {
                 />
               </motion.div>
               <div className="space-y-3 break-words font-mono text-xs text-white/80 sm:text-sm">
-                <p>const trust = await OrionTech.build(&#123;</p>
+                <p>const trust = await ShreeHariHardwareMart.build(&#123;</p>
                 <p className="pl-5 text-white">strategy: &quot;clear&quot;,</p>
                 <p className="pl-5 text-white">privacy: &quot;first&quot;,</p>
                 <p className="pl-5 text-white">security: &quot;default&quot;,</p>

@@ -5,10 +5,10 @@ import { PrivacyContent } from "@/components/privacy/PrivacyContent";
 export const metadata: Metadata = {
   title: "Privacy Policy & Terms",
   description:
-    "Read Orion Tech's privacy policy and terms for website visitors and project inquiries.",
+    "Read Shree Hari Hardware Mart's privacy policy and terms for website visitors and project inquiries.",
   openGraph: {
-    title: "Privacy Policy & Terms | Orion Tech",
-    description: "How Orion Tech protects information and defines service terms.",
+    title: "Privacy Policy & Terms | Shree Hari Hardware Mart",
+    description: "How Shree Hari Hardware Mart protects information and defines service terms.",
   },
 };
 

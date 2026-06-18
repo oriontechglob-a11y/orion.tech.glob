@@ -92,7 +92,7 @@ export function AgencyShowcase() {
                   <Code2 className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-sm font-black text-primary">Orion Secure Studio</p>
+                  <p className="text-sm font-black text-primary">Shree Hari Secure Systems</p>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
                     Live build system
                   </p>

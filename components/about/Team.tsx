@@ -42,7 +42,7 @@ export function Team() {
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-primary">{member.role}</h3>
-            <p className="mt-1 text-muted">Orion Tech team</p>
+            <p className="mt-1 text-muted">Shree Hari Hardware Mart team</p>
             <div className="mt-5 flex justify-center gap-3">
               {[BriefcaseBusiness, GitBranch].map((Icon, index) => (
                 <a

@@ -1,6 +1,6 @@
-# Orion Tech
+# Shree Hari Hardware Mart
 
-A production-ready marketing website for Orion Tech, built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, shadcn-style primitives, Resend, Zod, and React Hook Form.
+A production-ready marketing website for Shree Hari Hardware Mart, built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, shadcn-style primitives, Resend, Zod, and React Hook Form.
 
 ## Setup
 
@@ -19,7 +19,7 @@ Create `.env.local` and add:
 RESEND_API_KEY=your_resend_api_key
 ```
 
-The contact form posts to `app/api/contact/route.ts` and sends submissions to `oriontech.glob@gmail.com`. The default Resend sender is `onboarding@resend.dev`; replace it with a verified domain sender before production use.
+The contact form posts to `app/api/contact/route.ts` and sends submissions to `shreeharihardwaremart@gmail.com`. The default Resend sender is `onboarding@resend.dev`; replace it with a verified domain sender before production use.
 
 ## Scripts
 

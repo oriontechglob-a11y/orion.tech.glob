@@ -9,8 +9,8 @@ const details = [
   {
     icon: Mail,
     label: "Email",
-    value: "oriontech.glob@gmail.com",
-    href: "mailto:oriontech.glob@gmail.com",
+    value: "shreeharihardwaremart@gmail.com",
+    href: "mailto:shreeharihardwaremart@gmail.com",
   },
 ];
 

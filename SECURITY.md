@@ -1,6 +1,6 @@
 # Security Policy
 
-Orion Tech is built with privacy and security as the default operating model.
+Shree Hari Hardware Mart is built with privacy and security as the default operating model.
 
 ## Protecting Project Edits
 
@@ -23,4 +23,4 @@ Code-level files cannot stop someone who already has direct write access to the 
 
 ## Reporting Issues
 
-Report security concerns privately at `oriontech.glob@gmail.com`.
+Report security concerns privately at `shreeharihardwaremart@gmail.com`.

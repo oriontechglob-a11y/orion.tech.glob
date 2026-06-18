@@ -14,10 +14,10 @@ import { SecurityPromise } from "@/components/shared/SecurityPromise";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Orion Tech to start a web development, app development, or custom software project.",
+    "Contact Shree Hari Hardware Mart to start a web development, app development, or custom software project.",
   openGraph: {
-    title: "Contact Orion Tech",
-    description: "Start your next web, app, or software project with Orion Tech.",
+    title: "Contact Shree Hari Hardware Mart",
+    description: "Start your next web, app, or software project with Shree Hari Hardware Mart.",
   },
 };
 
@@ -49,8 +49,8 @@ export default function ContactPage() {
           Tell us what you want to build securely.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted">
-          Share only what you are comfortable sharing. Orion Tech will use your details to
-          understand the project and reply at oriontech.glob@gmail.com.
+          Share only what you are comfortable sharing. Shree Hari Hardware Mart will use your
+          details to understand the project and reply at shreeharihardwaremart@gmail.com.
         </p>
       </AnimatedSection>
 

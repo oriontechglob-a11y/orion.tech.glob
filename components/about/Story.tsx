@@ -15,9 +15,9 @@ export function Story() {
       </motion.div>
       <motion.div variants={childReveal} className="space-y-5 text-lg leading-8 text-muted">
         <p>
-          Orion Tech is a service-based software studio focused on app development, web development,
-          and custom digital products. We partner with businesses that want thoughtful strategy,
-          polished design, and dependable engineering in one team.
+          Shree Hari Hardware Mart is a service-based software studio focused on app development,
+          web development, and custom digital products. We partner with businesses that want
+          thoughtful strategy, polished design, and dependable engineering in one team.
         </p>
         <p>
           Our work blends modern product thinking with practical delivery. That means clean
