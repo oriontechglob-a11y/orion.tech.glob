@@ -18,11 +18,13 @@ const companyLinks = [
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
   { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms-and-conditions", label: "Terms & Conditions" },
 ];
 
 const buildLinks = [
   "Secure Websites",
   "Private Applications",
+  "Web3.0 Interfaces",
   "Fintech Interfaces",
   "Analytics Dashboards",
 ];
@@ -58,8 +60,8 @@ export function Footer() {
               Shree Hari Hardware Mart
             </div>
             <p className="max-w-md text-sm leading-7 text-muted">
-              Security-minded websites, applications, fintech interfaces, and dashboards designed
-              with a calm product feel and dependable engineering discipline.
+              Web3-style websites, secure applications, fintech interfaces, and dashboards designed
+              with calm motion, trust-first flows, and dependable engineering discipline.
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
               {principles.map((item) => (

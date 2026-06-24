@@ -15,6 +15,7 @@ const links = [
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
   { href: "/privacy-policy", label: "Privacy" },
+  { href: "/terms-and-conditions", label: "Terms" },
 ];
 
 export function Navbar() {
@@ -78,7 +79,7 @@ export function Navbar() {
             <span className="grid h-6 w-6 place-items-center rounded-md bg-surface text-accent">
               <LockKeyhole className="h-3.5 w-3.5" />
             </span>
-            Secure Live
+            Web3 Secure
           </div>
           <Button href="/contact" size="sm">
             Get a Quote

@@ -1,13 +1,47 @@
 "use client";
 
+import { EyeOff, FileLock2, LockKeyhole, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
-import { AnimatedSection, childReveal } from "@/components/shared/AnimatedSection";
+import {
+  AnimatedSection,
+  childRevealLeft,
+  childRevealRight,
+} from "@/components/shared/AnimatedSection";
+
+const privacyPillars = [
+  {
+    title: "Minimal collection",
+    body: "We only ask for the details needed to understand your request and respond responsibly.",
+    icon: EyeOff,
+  },
+  {
+    title: "Protected communication",
+    body: "Project ideas, private context, and technical details are treated as confidential.",
+    icon: FileLock2,
+  },
+  {
+    title: "Secure handling",
+    body: "Validation, abuse prevention, and security headers support safer website interactions.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Clear boundaries",
+    body: "Professional work begins only after scope, pricing, and responsibilities are agreed.",
+    icon: LockKeyhole,
+  },
+];
 
 export function PrivacyContent() {
   return (
-    <AnimatedSection className="pt-36 pb-20 sm:pt-40 sm:pb-24">
-      <motion.div variants={childReveal} className="mx-auto max-w-4xl text-center">
+    <AnimatedSection className="relative overflow-hidden pt-36 pb-20 sm:pt-40 sm:pb-24">
+      <div className="absolute left-4 top-32 h-28 w-28 border border-border bg-surface/80 blur-xl" />
+      <div className="absolute bottom-24 right-6 h-36 w-36 border border-accent/20 bg-white/80 blur-2xl" />
+
+      <motion.div
+        variants={childRevealLeft}
+        className="relative z-10 mx-auto max-w-4xl text-center"
+      >
         <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">Legal</p>
         <h1 className="mt-4 text-[clamp(2.5rem,7vw,4.8rem)] font-black leading-none tracking-[-0.05em] text-primary">
           Privacy Policy & Terms
@@ -19,9 +53,27 @@ export function PrivacyContent() {
         </p>
       </motion.div>
 
+      <div className="relative z-10 mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {privacyPillars.map((pillar, index) => (
+          <motion.article
+            key={pillar.title}
+            variants={index % 2 === 0 ? childRevealLeft : childRevealRight}
+            whileHover={{ y: -8, scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 280, damping: 22 }}
+            className="depth-card glass-panel rounded-md border border-border p-5"
+          >
+            <div className="mb-5 grid h-12 w-12 place-items-center rounded-md bg-primary text-white">
+              <pillar.icon className="h-5 w-5" />
+            </div>
+            <h2 className="text-lg font-black text-primary">{pillar.title}</h2>
+            <p className="mt-3 text-sm leading-7 text-muted">{pillar.body}</p>
+          </motion.article>
+        ))}
+      </div>
+
       <motion.article
-        variants={childReveal}
-        className="mx-auto mt-14 max-w-4xl rounded-md border border-border bg-white p-5 text-base leading-8 text-muted shadow-sm sm:p-10 sm:text-lg"
+        variants={childRevealRight}
+        className="depth-card glass-panel relative z-10 mx-auto mt-14 max-w-4xl rounded-md border border-border p-5 text-base leading-8 text-muted sm:p-10 sm:text-lg"
       >
         <p>
           When you use this website or contact Shree Hari Hardware Mart, we may receive the

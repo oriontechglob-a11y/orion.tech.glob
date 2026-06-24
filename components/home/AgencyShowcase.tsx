@@ -51,14 +51,14 @@ export function AgencyShowcase() {
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <motion.div variants={childRevealLeft} className="max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">
-            Animated Agency System
+            Web3.0 Interface System
           </p>
           <h2 className="mt-3 text-3xl font-black tracking-tight text-primary sm:text-5xl">
-            Premium motion, engineered with restraint.
+            Premium trust interfaces, engineered with restraint.
           </h2>
           <p className="mt-5 text-lg leading-8 text-muted">
-            Inspired by modern animated agency templates, this website uses directional reveals, 3D
-            depth, and crisp sections to feel official, polished, and easy to trust.
+            Inspired by modern animated agency systems, this website uses directional reveals, 3D
+            depth, and chain-like trust layers to feel official, polished, and easy to trust.
           </p>
 
           <motion.div variants={childReveal} className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -92,14 +92,14 @@ export function AgencyShowcase() {
                   <Code2 className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-sm font-black text-primary">Shree Hari Secure Systems</p>
+                  <p className="text-sm font-black text-primary">Shree Hari Web3 Trust Layer</p>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
                     Live build system
                   </p>
                 </div>
               </div>
               <span className="rounded-md bg-surface px-3 py-2 text-xs font-black text-accent">
-                3D UI
+                Web3 UI
               </span>
             </div>
 

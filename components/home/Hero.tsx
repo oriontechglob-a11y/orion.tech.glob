@@ -6,7 +6,7 @@ import { motion, useReducedMotion } from "framer-motion";
 
 import { Button } from "@/components/shared/Button";
 
-const words = "Build secure digital products people can trust".split(" ");
+const words = "Build Web3-ready digital trust experiences".split(" ");
 const floatingNodes = [
   "left-[8%] top-28 h-3 w-3 bg-accent",
   "left-[18%] top-[72%] h-4 w-4 bg-accent-secondary",
@@ -124,7 +124,7 @@ export function Hero() {
             initial={reduceMotion ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            Privacy-first app and web engineering studio
+            Web3.0 style, privacy-first engineering studio
           </motion.p>
           <h1 className="max-w-5xl text-[clamp(2.35rem,12vw,5.8rem)] font-black leading-[0.95] tracking-[-0.06em] text-primary">
             {words.map((word, index) => (
@@ -147,8 +147,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.5 }}
           >
-            Shree Hari Hardware Mart designs and ships human-friendly websites, applications, and
-            fintech interfaces where privacy, security, and user trust come first.
+            Shree Hari Hardware Mart designs human-friendly websites, applications, and trust layers
+            with blockchain-inspired clarity, privacy-first flows, and secure product logic.
           </motion.p>
           <motion.div
             className="mt-9 flex flex-col gap-4 sm:flex-row"
