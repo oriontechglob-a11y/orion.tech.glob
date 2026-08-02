@@ -16,21 +16,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://shreeharihardwaremart.com"),
   title: {
-    default: "Shree Hari Hardware Mart | Secure Web and App Development",
-    template: "%s | Shree Hari Hardware Mart",
+    default: "SH Global | Secure Web and App Development",
+    template: "%s | SH Global",
   },
   description:
-    "Shree Hari Hardware Mart builds privacy-first websites, applications, fintech interfaces, and custom software for growing businesses.",
+    "SH Global builds privacy-first websites, applications, fintech interfaces, and custom software for growing businesses.",
   openGraph: {
-    title: "Shree Hari Hardware Mart",
+    title: "SH Global",
     description: "Privacy-first web and app development services for ambitious teams.",
     url: "https://shreeharihardwaremart.com",
-    siteName: "Shree Hari Hardware Mart",
+    siteName: "SH Global",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shree Hari Hardware Mart",
+    title: "SH Global",
     description: "Privacy-first web and app development services for ambitious teams.",
   },
 };

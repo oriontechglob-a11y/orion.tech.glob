@@ -57,7 +57,7 @@ export function Footer() {
                   className="h-full w-full object-cover"
                 />
               </span>
-              Shree Hari Hardware Mart
+              SH Global
             </div>
             <p className="max-w-md text-sm leading-7 text-muted">
               Web3-style websites, secure applications, fintech interfaces, and dashboards designed
@@ -139,7 +139,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col justify-between gap-4 border-t border-border pt-6 text-xs text-muted md:flex-row md:items-center">
-          <p>Copyright {new Date().getFullYear()} Shree Hari Hardware Mart. All rights reserved.</p>
+          <p>Copyright {new Date().getFullYear()} SH Global. All rights reserved.</p>
           <div className="flex flex-wrap gap-4">
             {companyLinks.slice(1).map((link) => (
               <Link

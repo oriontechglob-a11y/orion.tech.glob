@@ -58,7 +58,7 @@ export function Navbar() {
               priority
             />
           </span>
-          <span className="text-lg tracking-tight">Shree Hari Hardware Mart</span>
+          <span className="text-lg tracking-tight">SH Global</span>
         </Link>
         <div className="depth-card hidden items-center gap-1 rounded-md border border-border bg-white p-1 lg:flex">
           {links.map((link) => (

@@ -56,6 +56,11 @@ export async function POST(request: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
+  const recipientEmail = process.env.CONTACT_EMAIL?.trim() || "shreeharihardwaremart@gmail.com";
+  const fromEmail =
+    process.env.RESEND_FROM_EMAIL?.trim() ||
+    "Shree Hari Hardware Mart Website <onboarding@resend.dev>";
+
   if (!apiKey) {
     return NextResponse.json({ error: "Email delivery is not configured yet." }, { status: 503 });
   }
@@ -66,8 +71,8 @@ export async function POST(request: Request) {
 
   try {
     await resend.emails.send({
-      from: "Shree Hari Hardware Mart Website <onboarding@resend.dev>",
-      to: "shreeharihardwaremart@gmail.com",
+      from: fromEmail,
+      to: recipientEmail,
       replyTo: email,
       subject: `New Shree Hari Hardware Mart inquiry: ${safeSubject}`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${safeSubject}\n\n${message}`,
