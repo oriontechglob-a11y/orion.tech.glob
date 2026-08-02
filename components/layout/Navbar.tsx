@@ -51,7 +51,7 @@ export function Navbar() {
           <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-md bg-primary shadow-sm transition-transform duration-300 ease-out group-hover:-rotate-3 group-hover:scale-105">
             <Image
               src="/images/orion-mark.png"
-              alt="Shree Hari Hardware Mart logo"
+              alt="SH Global logo"
               width={44}
               height={44}
               className="h-full w-full object-cover"

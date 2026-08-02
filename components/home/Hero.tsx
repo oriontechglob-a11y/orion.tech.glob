@@ -147,8 +147,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.5 }}
           >
-            Shree Hari Hardware Mart designs human-friendly websites, applications, and trust layers
-            with blockchain-inspired clarity, privacy-first flows, and secure product logic.
+            SH Global designs human-friendly websites, applications, and trust layers with
+            blockchain-inspired clarity, privacy-first flows, and secure product logic.
           </motion.p>
           <motion.div
             className="mt-9 flex flex-col gap-4 sm:flex-row"
@@ -197,7 +197,7 @@ export function Hero() {
                 </div>
                 <Image
                   src="/images/orion-mark.png"
-                  alt="Shree Hari Hardware Mart brand mark"
+                  alt="SH Global brand mark"
                   width={56}
                   height={56}
                   className="h-14 w-14 rounded-md object-cover"
@@ -211,7 +211,7 @@ export function Hero() {
               >
                 <Image
                   src="/images/orion-mark.png"
-                  alt="Animated Shree Hari Hardware Mart brand mark"
+                  alt="Animated SH Global brand mark"
                   width={220}
                   height={220}
                   className="mx-auto h-32 w-32 object-contain sm:h-48 sm:w-48"

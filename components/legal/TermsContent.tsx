@@ -48,10 +48,10 @@ export function TermsContent() {
         <motion.div variants={childRevealRight} className="space-y-5">
           <div className="depth-card rounded-md border border-border bg-white p-5 sm:p-8">
             <p className="text-base leading-8 text-muted sm:text-lg">
-              By using this website or contacting Shree Hari Hardware Mart, you agree to use our
-              content, forms, and communication channels lawfully. Any project work, consulting,
-              design, development, analytics, or technical delivery is governed by the written scope
-              agreed for that work.
+              By using this website or contacting SH Global, you agree to use our content, forms,
+              and communication channels lawfully. Any project work, consulting, design,
+              development, analytics, or technical delivery is governed by the written scope agreed
+              for that work.
             </p>
           </div>
 
@@ -78,9 +78,9 @@ export function TermsContent() {
             <p className="mt-4 leading-8 text-white/75">
               Deposits, milestones, and final payments must follow the written agreement. Delivery
               may pause if required materials, approvals, or payments are delayed. To the fullest
-              extent permitted by law, Shree Hari Hardware Mart is not responsible for indirect
-              losses, third-party outages, unauthorized changes, misuse, or issues caused by access
-              granted outside our control.
+              extent permitted by law, SH Global is not responsible for indirect losses, third-party
+              outages, unauthorized changes, misuse, or issues caused by access granted outside our
+              control.
             </p>
           </div>
         </motion.div>

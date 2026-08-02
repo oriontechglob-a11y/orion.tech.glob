@@ -51,7 +51,7 @@ export function Footer() {
               <span className="relative grid h-12 w-12 place-items-center overflow-hidden rounded-md bg-primary transition-transform duration-300 ease-out hover:scale-105">
                 <Image
                   src="/images/orion-mark.png"
-                  alt="Shree Hari Hardware Mart logo"
+                  alt="SH Global logo"
                   width={48}
                   height={48}
                   className="h-full w-full object-cover"

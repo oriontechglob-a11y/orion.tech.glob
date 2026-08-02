@@ -47,9 +47,9 @@ export function PrivacyContent() {
           Privacy Policy & Terms
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-muted sm:text-lg">
-          We keep this page direct and human. Shree Hari Hardware Mart builds websites,
-          applications, analytics products, and fintech interfaces, and we treat privacy, security,
-          and clear expectations as part of the work from day one.
+          We keep this page direct and human. SH Global builds websites, applications, analytics
+          products, and fintech interfaces, and we treat privacy, security, and clear expectations
+          as part of the work from day one.
         </p>
       </motion.div>
 
@@ -76,11 +76,11 @@ export function PrivacyContent() {
         className="depth-card glass-panel relative z-10 mx-auto mt-14 max-w-4xl rounded-md border border-border p-5 text-base leading-8 text-muted sm:p-10 sm:text-lg"
       >
         <p>
-          When you use this website or contact Shree Hari Hardware Mart, we may receive the
-          information you choose to share with us, such as your name, email address, subject,
-          project message, and a small amount of technical request information that helps us keep
-          the website safe. We ask only for the details needed to understand your request, reply to
-          you, prevent misuse, and plan a responsible next step.
+          When you use this website or contact SH Global, we may receive the information you choose
+          to share with us, such as your name, email address, subject, project message, and a small
+          amount of technical request information that helps us keep the website safe. We ask only
+          for the details needed to understand your request, reply to you, prevent misuse, and plan
+          a responsible next step.
         </p>
 
         <p className="mt-6">
@@ -92,11 +92,11 @@ export function PrivacyContent() {
         </p>
 
         <p className="mt-6">
-          Shree Hari Hardware Mart may use trusted third-party services for hosting, deployment,
-          email delivery, security, analytics, or communication. These services may process limited
-          information only for the purpose of making the website and our communication work
-          properly. We choose tools with privacy and reliability in mind, but no internet service
-          can be promised to be perfect or risk-free.
+          SH Global may use trusted third-party services for hosting, deployment, email delivery,
+          security, analytics, or communication. These services may process limited information only
+          for the purpose of making the website and our communication work properly. We choose tools
+          with privacy and reliability in mind, but no internet service can be promised to be
+          perfect or risk-free.
         </p>
 
         <p className="mt-6">
@@ -117,19 +117,18 @@ export function PrivacyContent() {
 
         <p className="mt-6">
           Unless a written agreement says otherwise, client-specific final deliverables transfer
-          after full payment is received. Shree Hari Hardware Mart may still keep general knowledge,
-          reusable methods, internal tools, development patterns, and non-confidential experience
-          gained during the work. Deposits, milestone payments, and final payments must be completed
-          as agreed, and delivery may be paused if required approvals, materials, or payments are
+          after full payment is received. SH Global may still keep general knowledge, reusable
+          methods, internal tools, development patterns, and non-confidential experience gained
+          during the work. Deposits, milestone payments, and final payments must be completed as
+          agreed, and delivery may be paused if required approvals, materials, or payments are
           delayed.
         </p>
 
         <p className="mt-6">
-          To the fullest extent allowed by law, Shree Hari Hardware Mart is not responsible for
-          indirect, incidental, special, consequential, business-interruption, or third-party
-          service losses. We are also not responsible for issues caused by unauthorized edits,
-          misuse, client-side changes, external outages, or access granted to people outside our
-          control.
+          To the fullest extent allowed by law, SH Global is not responsible for indirect,
+          incidental, special, consequential, business-interruption, or third-party service losses.
+          We are also not responsible for issues caused by unauthorized edits, misuse, client-side
+          changes, external outages, or access granted to people outside our control.
         </p>
 
         <p className="mt-6">

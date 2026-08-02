@@ -5,9 +5,9 @@ import { TermsContent } from "@/components/legal/TermsContent";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
-    "Terms and conditions for using the Shree Hari Hardware Mart website and requesting professional services.",
+    "Terms and conditions for using the SH Global website and requesting professional services.",
   openGraph: {
-    title: "Terms & Conditions | Shree Hari Hardware Mart",
+    title: "Terms & Conditions | SH Global",
     description: "Clear terms for secure, professional project communication and delivery.",
   },
 };
