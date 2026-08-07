@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { BriefcaseBusiness, GitBranch } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { AnimatedSection, childReveal } from "@/components/shared/AnimatedSection";
@@ -11,6 +11,8 @@ const team = [
   { role: "Data Science & Analytics Member", image: "/images/team-dev.svg" },
   { role: "Quant Developer", image: "/images/team-karan.svg" },
 ];
+
+const linkedinProfileUrl = "https://www.linkedin.com/in/sh-global-0aa939427/?skipRedirect=true";
 
 export function Team() {
   return (
@@ -44,16 +46,15 @@ export function Team() {
             <h3 className="mt-6 text-xl font-bold text-primary">{member.role}</h3>
             <p className="mt-1 text-muted">SH Global team</p>
             <div className="mt-5 flex justify-center gap-3">
-              {[BriefcaseBusiness, GitBranch].map((Icon, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  aria-label={`${member.role} social profile placeholder`}
-                  className="grid h-10 w-10 place-items-center rounded-md border border-border text-muted transition-colors hover:bg-primary hover:text-white"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
+              <a
+                href={linkedinProfileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${member.role} LinkedIn profile`}
+                className="grid h-10 w-10 place-items-center rounded-md border border-border text-muted transition-colors hover:bg-primary hover:text-white"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
             </div>
           </motion.article>
         ))}

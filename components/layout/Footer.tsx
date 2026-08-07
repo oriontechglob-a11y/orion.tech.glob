@@ -5,10 +5,9 @@ import Image from "next/image";
 import {
   ArrowUpRight,
   BriefcaseBusiness,
-  GitBranch,
+  Linkedin,
   LockKeyhole,
   Mail,
-  MessageCircle,
   ShieldCheck,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -34,6 +33,8 @@ const principles = [
   { icon: LockKeyhole, label: "Secure delivery" },
   { icon: BriefcaseBusiness, label: "Business-ready" },
 ];
+
+const linkedinProfileUrl = "https://www.linkedin.com/in/sh-global-0aa939427/?skipRedirect=true";
 
 export function Footer() {
   return (
@@ -120,16 +121,15 @@ export function Footer() {
               <Mail className="h-4 w-4 text-accent" /> shreeharihardwaremart@gmail.com
             </a>
             <div className="flex gap-3" aria-label="Social links">
-              {[GitBranch, BriefcaseBusiness, MessageCircle].map((Icon, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  aria-label="Social profile placeholder"
-                  className="grid h-10 w-10 place-items-center rounded-md border border-border bg-white text-muted transition-colors hover:bg-primary hover:text-white"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
+              <a
+                href={linkedinProfileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit SH Global on LinkedIn"
+                className="grid h-10 w-10 place-items-center rounded-md border border-border bg-white text-muted transition-colors hover:bg-primary hover:text-white"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
             </div>
             <p className="mt-5 text-xs leading-6 text-muted">
               Share only what you are comfortable sharing. We keep project inquiries focused,

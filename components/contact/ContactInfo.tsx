@@ -1,6 +1,6 @@
 "use client";
 
-import { BriefcaseBusiness, GitBranch, Mail, MessageCircle } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { childReveal } from "@/components/shared/AnimatedSection";
@@ -13,6 +13,8 @@ const details = [
     href: "mailto:shreeharihardwaremart@gmail.com",
   },
 ];
+
+const linkedinProfileUrl = "https://www.linkedin.com/in/sh-global-0aa939427/?skipRedirect=true";
 
 export function ContactInfo() {
   return (
@@ -51,16 +53,15 @@ export function ContactInfo() {
         ))}
       </div>
       <div className="mt-8 flex gap-3">
-        {[GitBranch, BriefcaseBusiness, MessageCircle].map((Icon, index) => (
-          <a
-            key={index}
-            href="#"
-            aria-label="Social profile placeholder"
-            className="grid h-11 w-11 place-items-center rounded-md border border-white/20 text-white/75 transition-colors hover:bg-white hover:text-primary"
-          >
-            <Icon className="h-5 w-5" />
-          </a>
-        ))}
+        <a
+          href={linkedinProfileUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SH Global on LinkedIn"
+          className="grid h-11 w-11 place-items-center rounded-md border border-white/20 text-white/75 transition-colors hover:bg-white hover:text-primary"
+        >
+          <Linkedin className="h-5 w-5" />
+        </a>
       </div>
     </motion.aside>
   );
